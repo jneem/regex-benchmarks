@@ -1,0 +1,15 @@
+[package]
+name = "regex-benchmarks"
+version = "0.1.0"
+authors = ["Joe Neeman <joeneeman@gmail.com>"]
+
+[dependencies]
+#regex = "*"
+regex = { path = "../regex" }
+
+[[bench]]
+name = "bench"
+path = "benches/bench.rs"
+test = true
+bench = true
+
