@@ -5,8 +5,9 @@ authors = ["Joe Neeman <joeneeman@gmail.com>"]
 
 [dependencies]
 #regex = "*"
-#regex = { path = "../regex" }
-regex = { git = "https://github.com/rust-lang-nursery/regex.git", branch = "dfa" }
+#regex = { path = "../regex-orig" }
+regex = { path = "../regex" }
+#regex = { git = "https://github.com/rust-lang-nursery/regex.git", branch = "dfa" }
 
 [[bench]]
 name = "bench"
